@@ -1,0 +1,30 @@
+name: RoeBoat
+version: 1.1.1.?-BETA
+author: JRoeseph
+main: com.jroeseph.roeboat.RoeBoat
+api-version: 1.21
+commands:
+  hub:
+    description: Teleports the player to the hub
+    aliases: [lobby, menu]
+    usage: /<command>
+  survival:
+    description: Teleports the player to the survival world
+    usage: /<command>
+  spawngrave:
+    description: Spawns a dummy grave that anyone can clear
+    usage: /<command> [player_name] [death_message]
+    permission: op
+  sheeplog:
+    description: Gives a book with the history of players how have hurt or killed sheep
+    usage: /<command>
+  timevote:
+    description: Casts a vote to make it day or night
+    usage: /<command> [day/night]
+  cc:
+    description: Sends a chat in chat that looks better than "say"
+    usage: /<command> [message]
+    permission: op
+permissions:
+  roeboat.sheep:
+    default: false
